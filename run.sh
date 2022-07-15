@@ -1,0 +1,1 @@
+jupiter-nbconvert --execute first.ipynb
