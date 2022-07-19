@@ -1,5 +1,5 @@
-FROM python:3.10
+FROM continuumio/miniconda3
 ADD ./ .
-RUN sudo pip install –r requirements.txt
-RUN sudo jupyter-nbconvert --execute ./first.ipynb
+RUN /bin/sh -c pip install –r ./requirements.txt
+RUN /bin/sh -c /bin/sh -c jupyter-nbconvert --execute ./first.ipynb
 
